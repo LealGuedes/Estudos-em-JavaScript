@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Realizando - Operações Aritiméticas & Strings </title>
+<script>
+var x;
+function inverter(x) {
+  
+    return x.split('').reverse().join('');
+}  
+ function selecionaOpcao(){
+
+        var opc =Number.parseInt(window.prompt("Qual tipo de operação voce deseja realizar ?\n[1]: Operação Aritimética.\n[2]: Operação com Strings.")); 
+
+            if(opc == 1){
+
+                var op =Number.parseInt(window.prompt("Qual tipo de operação Aritimética voce deseja realizar? [3]:Adição.\n[4]:Subtração.\n[s]: Multiplicação.\n[6]:Divisão.")); 
+
+                    if(op == 3){
+
+                        var soma=0;
+                        var op =Number.parseInt(window.prompt("Qual a quantidade de numeros você deseja Somar?"));
+                        
+                        for(var i=0; i< op;i++){
+                            
+                            var n = Number.parseInt(window.prompt(`Digite o valor do ${i+1}:`));
+                            
+                            soma +=n;
+                        }
+                        window.document.write(`O resultado da sua operação foi:\n${soma}`);
+
+                    }else if(op == 4){//subtracao
+
+                        var subtrai=0;
+                        var op =Number.parseInt(window.prompt("Quantos números você deseja realizar a subtracao? "));
+                        
+                        for(var i=0; i< op;i++){
+                            
+                            var n = Number.parseInt(window.prompt(`Digite o valor do ${i+1}:`));
+                      
+                            if(subtrai == 0){
+
+                                subtrai =n;
+                            }else{
+
+                                subtrai =(subtrai - n);
+                            }
+                        }
+                        window.document.write(`Os resultado da sua operação foi:\n${subtrai}`);
+
+                    }else if(op == 5){//Multiplicação
+
+
+                        var  acumula =1;
+
+                        
+                        var op =Number.parseInt(window.prompt("Quantos números você deseja realizar a Multiplicao? "));
+                        
+                        for(var i=0; i< op;i++){
+                            
+                            var  n = Number.parseInt(window.prompt(`Digite o valor do ${i+1}:`));        
+                            acumula =(acumula*n);
+                        }
+                        window.document.write(`Os resultado da sua operação foi:\n${acumula}`);
+                    }else if(op == 6){//divisao
+
+                         
+                        var  divisao =1;
+                        var op =Number(window.prompt("Quantos números você deseja realizar a Divisão? "));
+
+                            for(var i=0; i< op;i++){
+                                
+                                var  n = Number(window.prompt(`Digite o valor do ${i+1}:`));        
+                                    if(divisao == 1){
+                                        
+                                        divisao=n;
+                                    }else{
+
+                                        divisao =(divisao / n);
+                                    }
+                            }
+                            window.document.write(`Os resultado da sua operação foi:\n${divisao}`);
+                    }
+
+            }else if(opc == 2){ // operacao basica com strings.
+
+                var op =Number(window.prompt("Qual operação você deseja realizar com STRINGS ?\n[1]:Transformar em Maiusculas a palavra digitada.\n [2] :Tranformar em Minusculas a palavra digitada.\n[3]:Inverter a STRING digitada."));
+
+                    if(op == 1){
+
+                        var str = window.prompt("Digite a palavra:");
+                        window.document.write(`A palavra digitada foi:\n${str.toLocaleUpperCase()}`);
+                    }else if(op == 2){
+                        
+                        var str = window.prompt("Digite a palavra:");
+                        window.document.write(`A palavra digitada foi:\n${str.toLowerCase()}`);
+                    }else if(op ==3 ){
+
+                        var str = window.prompt("Digite a palavra:");
+                        var strInvertida;
+                        strInvertida = inverter(str);
+                        window.document.write(`A palavra digitada foi:\n${str} e sua forma invertida eh: ${strInvertida}`);
+                    }
+            
+            }
+    }
+    function funcaoGeral(){
+   
+            selecionaOpcao();
+    }
+    
+    window.addEventListener("load",funcaoGeral);
+</script>
+</head>
+<body>
+</body>
+</html>
