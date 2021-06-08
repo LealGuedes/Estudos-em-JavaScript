@@ -1,2 +1,2 @@
 # Estudos em JavaScript
- Aqui estão algumas atividades resalizadas em Js.
+ Aqui estão algumas atividades realizadas em Js.
