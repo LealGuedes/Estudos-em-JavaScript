@@ -1,0 +1,16 @@
+=>Informacoes da Atividade
+
+Nesta atividade foram posto em pratica:
+
+*Operações aritimeticas básicas na linguagem js(ADICAO,SUBTRACAO,DIVISAO);
+*Uso do objeto "Numeber" e o metodo de conversão "parseInt" para
+recuperar os dados passados pelo usuário;
+*Uso do metodo "prompt" do objeto Window;
+*Noções basicas de variavel;
+*Noções Basicas de Operador condicional "if" e "else if";
+*Operador relacional "==";
+*Noção básica de Laço de repetição "for";
+*Metodos básica para o tratamento de strings "toUpperCase"(Tranforma em Maiusculas) e "toLoweCase"(transformar em minusculas);
+*Noção básca de Funções;
+*Noções básicas de Manipulacao de Evento:"addEventListener";
+*Evento:"load"(Carregamento da página);  
