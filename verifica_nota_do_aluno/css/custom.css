@@ -1,0 +1,46 @@
+body,html{
+
+    font-family: 'Roboto', sans-serif;
+}
+#header{
+    
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+}
+#header a.navbar-brand{
+
+    border:1px solid red;
+}
+#header .navbar-collapse{
+    border: 1px solid pink;
+    width:auto;
+}
+#header .nav-link{
+
+    text-transform:uppercase;/*deixa tuo em letra maiusculas*/
+    padding-left: 0;
+    padding-right:0;
+    margin-left:0;
+    margin-right:0;
+    font-weight:500;
+    color:whitesmoke;
+    border-bottom:solid 5px transparent;/*para nao ficar o efeito de pulo quando passar o mouse, o transparent é para nao ter nenhuma cor*/
+
+}
+#header .nav-link:hover{
+
+    border-bottom:solid 5px var(--efect-hover-secundary) ;
+}
+#header{
+
+    background:orangered;
+}
+
+.menu-fixed{
+
+    position: fixed;
+    width: 100%;
+    background:orangered;
+    z-index:9999;
+
+}

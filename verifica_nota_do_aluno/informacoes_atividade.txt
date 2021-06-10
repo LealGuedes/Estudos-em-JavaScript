@@ -1,0 +1,11 @@
+=>Informações da Atividade
+
+Neste exemplo foi utilizados 
+*evento de botao:Click;
+*Interação do usuarios através das janelas Prompt;
+*Operação Aritiméticas:ADICAO,DIVISAO;
+*Acesso a elementos na pagina via 'id';
+*Alterção de conteúdo de um elemento via propriedade 'innerText';
+*Uso de Laço de Repetição:do..While & For;
+*Manipulador de eventos:"addEventListener"
+ 
