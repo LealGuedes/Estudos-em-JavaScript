@@ -2,10 +2,11 @@
 
 Neste exemplo foi utilizados 
 *evento de botao:Click;
-*Interação do usuarios através das janelas Prompt;
+*Interação do usuarios através do metodo "Prompt" presente no objeto "Window" ;
 *Operação Aritiméticas:ADICAO,DIVISAO;
 *Acesso a elementos na pagina via 'id';
-*Alterção de conteúdo de um elemento via propriedade 'innerText';
+*Alterção do conteúdo de um elemento via propriedade 'innerText';
 *Uso de Laço de Repetição:do..While & For;
-*Manipulador de eventos:"addEventListener"
+*Manipulador de eventos:"addEventListener";
+*Uso de variavel do tipo "Object"(Objeto ALuno);
  
