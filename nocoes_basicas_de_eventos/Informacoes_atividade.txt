@@ -1,0 +1,8 @@
+=>Informacoes Atividade
+
+Nesta Atividade foram praticados:
+
+*Uso de Manipulacao de evento:"addEventListener";
+*Eventos de mouse:"click","dblclick","mouseout","mouseover","mouseup","mousedown";
+*Acesso de elemento via "id";
+*Alteracao do conetudo de um elemento via propriedade "innerTex";

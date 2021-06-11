@@ -1,0 +1,24 @@
+.button{
+
+    text-transform:lowercase;
+    font-weight: 500;
+    background-color: rgb(245, 238, 233);
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+
+}
+.button-primary{
+
+    color:white;
+    background-color:var(--bg-btn-primary);
+    border-color:var(--bg-btn-primary);
+}
+.button-primary:hover{
+    color:white;
+    background-color:var(--bg-btn-primary-hover);
+    border-color:var(--bg-btn-primary-hover);
+}
+.block{
+
+    margin-top:75px;
+}
