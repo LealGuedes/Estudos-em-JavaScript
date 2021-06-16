@@ -1,0 +1,21 @@
+=>INFORMACAO EXERCICIO
+
+Neste exercicio,foi utilizado 
+algumas funcoes de insercao e remocao 
+de conteudos de um array.
+
+
+*Conteudos envolvidos:
+
+	-Nocao basica de funcao;
+	-metodos de array:push,pop,shift,splice;
+	-manipulador de evento 'add.EventListener' e evento 'click';
+	-metodo 'prompt()';
+	-Objeto Number e metodo 'parseInt';
+	-Acesso de elementos via 'id';
+	-Operador condicional 'if';
+	
+
+
+
+ 
