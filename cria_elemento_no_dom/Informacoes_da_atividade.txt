@@ -1,7 +1,7 @@
 ***********INFORMACOES DA ATIVIDADE**************
 
 
-Nesta atividade foi visto como inserir elementos na arvore dom
+Nesta atividade foi visto como criar novos elementos e inseri-los na arvore dom
 com o metodo ".createElement()" do objeto "document".
 
 RESUMO DA ATIVIDADE
