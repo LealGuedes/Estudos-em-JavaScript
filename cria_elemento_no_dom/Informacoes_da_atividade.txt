@@ -1,0 +1,13 @@
+***********INFORMACOES DA ATIVIDADE**************
+
+
+Nesta atividade foi visto como inserir elementos na arvore dom
+com o metodo ".createElement()" do objeto "document".
+
+RESUMO DA ATIVIDADE
+
+*Uso do metodo para criando elementos no dom:createElement;
+*ALteração de propriedades css do elemento com uso da propriedade '.style';
+*Acesso ao elemento atraves de ids;
+*Inserindo elementos no dom atraves da propriedade '.appendChild';
+*Uso de Manipuladores de eventos 'addEventListener' e evento 'click';  
