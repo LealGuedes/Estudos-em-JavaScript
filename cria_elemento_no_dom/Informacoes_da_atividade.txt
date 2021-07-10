@@ -1,8 +1,8 @@
 ***********INFORMACOES DA ATIVIDADE**************
 
 
-Nesta atividade foi visto como criar novos elementos e inseri-los na arvore dom
-com o metodo ".createElement()" do objeto "document".
+Nesta atividade foi visto como Inserir e Remover  elementos da arvore dom
+com o metodo ".createElement()" do objeto "document" e o metodo ".remove()".
 
 RESUMO DA ATIVIDADE
 
@@ -10,4 +10,7 @@ RESUMO DA ATIVIDADE
 *ALteração de propriedades css do elemento com uso da propriedade '.style';
 *Acesso ao elemento atraves de ids;
 *Inserindo elementos no dom atraves da propriedade '.appendChild';
-*Uso de Manipuladores de eventos 'addEventListener' e evento 'click';  
+*Uso de Manipuladores de eventos 'addEventListener' e evento 'click';
+*Recuperando todos os elementos da arvore dom com '.childNodes';
+*Impedindo que o botão de insercao de elementos na arvore dom seja o unico NAO-REMOVIVEL com o metodo 'hasAttribute()';
+*Interacao com os elementos filhos através do laco "for" e verificacao de qual elemento foi clicado para efetuar a remocao com o metodo '.remove()'; 
