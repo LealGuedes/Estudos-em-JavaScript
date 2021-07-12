@@ -40,7 +40,7 @@
           if(array.length ==1){
 
               document.getElementById("msg").innerText="[SEU ARRAY ESTÁ VAZIO!!]";
-               carregaElementosDenovo();        }else{
+               carregaElementosDenovo();       
 
                 var voce_ta_excluido = array.shift();
                 document.getElementById("msg").innerText=`O elemento excluido foi:${voce_ta_excluido}\n e o novo Array:[${array}]`;
@@ -81,26 +81,58 @@
               document.getElementById("msg").innerText="["+array+"]";
 
 
-
             }
       }
-      function inserir(){
+      function inserirNoFinal(){
 
-        var novo_elemento = window.prompt("Digite o elemento que Deseja inserir no ARRAY:\n");
+        var novo_elemento = window.prompt("Digite o elemento que Deseja inserir no FIM do ARRAY:\n");
                       
         array.push(novo_elemento);
         document.getElementById("msg").innerText="["+array+"]";
 
       }
+       function inserirNoInicio(){
+
+        var novo_elemento = window.prompt("Digite o elemento que Deseja inserir no INICIO do ARRAY:\n");
+                      
+        array.unshift(novo_elemento);
+        document.getElementById("msg").innerText="["+array+"]";
+
+      }
+      function calculaElementos(){
+
+            somaTodosElementosArray = array.reduce((variavel_controle,array)=>variavel_controle + array, 0);
+
+            document.getElementById("msg").innerText=`O resultado da soma de todos elementos do teu array foi:${somaTodosElementosArray}`;
+      }
+       function filtreElementos(){
+
+          var array_filtrado;
+          var elemento_que_nao_desejamos_mostrar =  Number.parseInt(window.prompt("Digite o elemento que voce nao Deseja mostrar no Array:\n"));
+
+          if((array.includes(elemento_que_nao_desejamos_mostrar) == false)){
+
+                  alert(`O elemento ${elemento_que_nao_desejamos_mostrar} não existe no teu array!!!`);
+          }else{
+
+                   array_filtrado = array.filter((array) => array != elemento_que_nao_desejamos_mostrar);
+
+                  document.getElementById("msg").innerText="Array Filtrado : ["+array_filtrado+"]";
+          }
+
+          console.log("o retorno foi "+array.includes(elemento_que_nao_desejamos_mostrar));
+      }
       function funcaoGeral(){
        
         mostraElemento();
-        document.getElementById("insere").addEventListener("click",inserir);
+        document.getElementById("insere-inicio").addEventListener("click",inserirNoInicio);
+        document.getElementById("insere-fim").addEventListener("click",inserirNoFinal);
         document.getElementById("remove-inicio").addEventListener("click", removeDoInicio);
         document.getElementById("remove-fim").addEventListener("click",removeDoFinal);
-         document.getElementById("remove-Especifico").addEventListener("click",removeElementoEspecifico);
+        document.getElementById("remove-Especifico").addEventListener("click",removeElementoEspecifico);
+        document.getElementById("calcula-Elementos").addEventListener("click",calculaElementos);
+        document.getElementById("filtre-Elementos").addEventListener("click",filtreElementos);
        
-
       }
       window.addEventListener("load",funcaoGeral);
 
@@ -120,18 +152,19 @@
               <div class="container-fluid py-5" id="conteudo">
                 <h1 class="display-5 fw-bold">Elementos Disponivel no Teu Array:</h1>
                 <p class="col-md-8 fs-4" id="msg"></p>
-                <button class="btn btn-success btn-lg" type="button" id="insere">Inserir</button>
+                <button class="btn btn-success btn-lg" type="button" id="insere-inicio">Inserir no Inicio</button>
+                 <button class="btn btn-info btn-lg" type="button" id="insere-fim">Inserir no Fim</button>
                 <button class="btn btn-primary btn-lg" type="button" id="remove-inicio">Remover Primeiro Elemento do Array</button>
                 <button class="btn btn-danger mt-sm-1 btn-lg" type="button" id="remove-fim">Remover Utimo Elemento do Array</button>
-                  <button class="btn btn-warning mt-sm-1 btn-lg" type="button" id="remove-Especifico">Remover Elemento Especifico</button>
+                <button class="btn btn-warning mt-sm-1 btn-lg" type="button" id="remove-Especifico">Remover Elemento Especifico</button>
+                 <button class="btn btn-dark mt-sm-1 btn-lg" type="button" id="calcula-Elementos">Calcula todos os elementos do Array</button>
+                <button class="btn btn-secondary mt-sm-1 btn-lg" type="button" id="filtre-Elementos">Realizar Filtragem</button>
                         
               </div>
           </div>
       </div>
     </main>
-   
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
